@@ -7,13 +7,13 @@
 # It is designed with only one purpose in mind: let the user see their reflection. 
 # Despite the amount of time we spend looking in a mirror, it has not evolved or developed past this singular function. 
 
-# We designed our product, the (smart mirror), to evolve the experience of using a mirror. 
+# We designed our product, Mira, to evolve the experience of using a mirror. 
 # Our company's mantra is to create technology that advances along with society. 
-# Our vision for the future includes the idea that every household comes along with a set of (smart mirrors) designed to accustom any room.
+# Our vision for the future includes the idea that every household comes along with a Mira designed to accustom any room.
 
-# The (smart mirror) features a
+# Mira features a
 # clock
 # weather/temperature
 # to do list
 
-# Mirrors are a thing of the past, we need something new at last! Introducing the (smart mirror)!
+# Mirrors are a thing of the past, we need something new at last! Introducing Mira!
