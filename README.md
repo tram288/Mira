@@ -1,6 +1,6 @@
 # Mira
 
-# As time goes on and generations pass by each other, both society and its needs develop. 
+# As time goes on and generations pass by each other, society and its needs develop. 
 # Therefore, we need to be constantly adapting to the change happening around us. 
 # The mirror is an object that we use in everyday life that could use some adapting. 
 # It performs a very simple function, one with no flair, yet it is one of the most commonly used objects in the world. 
