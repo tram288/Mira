@@ -9,7 +9,7 @@
 
 # We designed our product, Mira, to evolve the experience of using a mirror. 
 # Our company's mantra is to create technology that advances along with society. 
-# Our vision for the future includes the idea that every household comes along with a Mira designed to accustom any room.
+# Our vision for the future includes the idea that every household is accustomed to having a Mira in their home.
 
 # Mira features a
 # clock
