@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Mira Web App",
+    "\\Mira Web App\\Mira Web App",
+    "\\Mira Web App\\Mira Web App\\Pages"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\Mira Web App\\Mira Web App\\Pages\\About.cshtml",
   "PreviewInSolutionExplorer": false
 }
