@@ -13,6 +13,26 @@
             background: black;
         }
 
+        #navigationbar a {
+            position: absolute;
+            left: -210px;
+            transition: 0.5s;
+            padding: 15px;
+            width: 230px;
+            color: white;
+            border-radius: 0 5px 5px 0;
+        }
+
+        #widget {
+            top: 55px;
+            background-color: white;
+        }
+
+        #navigationbar a:hover {
+            left: 0;
+        }
+
+
         #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19, #div20, #div21, #div22, #div23, #div23,
         #div24, #div25, #div26, #div27, #div28 {
             position: relative;
@@ -75,6 +95,32 @@
 
 <body>
 
+    <div id="navigationbar">
+        <a id="widget">
+
+            <ul>
+                <li> <img id="drag1" src="https://source.unsplash.com/random/150x150" draggable="true" ondragstart="drag(event)" width="150" height="150"></li>
+                <li> <img id="drag5" src="https://picsum.photos/200/300/?random" draggable="true" ondragstart="drag(event)" width="150" height="150"></li>
+                <li>
+                    <div id="div29" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                        <iframe id="drag3" src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=America%2FNew_York" scrolling='no' height=200 width=250 frameborder="0" seamless></iframe>
+                    </div>
+                </li>
+                <li>
+                    <div id="div30" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                        <iframe id="drag6" src="https://www.youtube.com/embed/UO5CX_oNfXg" width="250" height="200" frameborder="0" draggable="true"></iframe>
+                    </div>
+                </li>
+                <li>
+                    <div id="div31" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                        <iframe id="drag7" src='http://cdn.instantcal.com/cvir.html?id=cv_nav1&theme=RE&ntype=cv_datepicker&file=http%3A%2F%2Fwww.instantcal.com%2Ftest.ics&border_radius=5' ondragstart="drag(event)" allowTransparency='true' scrolling='no' frameborder=0 height=200 width=200></iframe>
+                    </div>
+                </li>
+            </ul>
+        </a>
+
+    </div>
+
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -103,26 +149,6 @@
     <div id="div26" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div id="div27" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div id="div28" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-    <div id="div29" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
-        <iframe id="drag3" src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=America%2FNew_York" scrolling='no' height=200 width=250 frameborder="0" seamless></iframe>
-    </div>
-
-    <div id="div30" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
-        <iframe id="drag6" src="https://www.youtube.com/embed/UO5CX_oNfXg" width="250" height="200" frameborder="0" draggable="true"></iframe>
-    </div>
-
-    <div id="div31" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
-        <iframe id="drag7" src='http://cdn.instantcal.com/cvir.html?id=cv_nav1&theme=RE&ntype=cv_datepicker&file=http%3A%2F%2Fwww.instantcal.com%2Ftest.ics&border_radius=5' ondragstart="drag(event)" allowTransparency='true' scrolling='no' frameborder=0 height=200 width=200></iframe>
-    </div>
-
-    <img id="drag1" src="https://source.unsplash.com/random/150x150" draggable="true" ondragstart="drag(event)" width="150" height="150">
-    <img id="drag5" src="https://picsum.photos/200/300/?random" draggable="true" ondragstart="drag(event)" width="300" height="300">
-    
-
-
-    <p id="drag4" draggable="true" ondragstart="drag(event)">TEST TEST TEST</p>
-   
 
 </body>
 </html>
