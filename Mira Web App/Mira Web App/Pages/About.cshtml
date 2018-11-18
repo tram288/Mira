@@ -18,13 +18,34 @@
             position: relative;
             height: 150px;
             width: 150px;
-            cursor: pointer;
             border: 1px solid white;
             float: left;
             top: 5px;
         }
 
         #div29 {
+            position: relative;
+            height: 150px;
+            width: 300px;
+            cursor: pointer;
+            border: 1px solid white;
+            float: left;
+            top: 5px;
+            z-index: 3;
+        }
+
+        #div30 {
+            position: relative;
+            height: 150px;
+            width: 300px;
+            cursor: pointer;
+            border: 1px solid white;
+            float: left;
+            top: 5px;
+            z-index: 3;
+        }
+
+        #div31 {
             position: relative;
             height: 150px;
             width: 300px;
@@ -44,6 +65,10 @@
         p {
             color: white;
             font-size: 20px;
+        }
+
+        img {
+            cursor: pointer;
         }
     </style>
 </head>
@@ -70,7 +95,7 @@
     <div id="div18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div id="div19" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div id="div20" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    <div id="div21" ondrop="drop(event)" ondragover="allowDrop(iframeevent)"></div>
+    <div id="div21" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div id="div22" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div id="div23" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div id="div24" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -83,13 +108,21 @@
         <iframe id="drag3" src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=America%2FNew_York" scrolling='no' height=200 width=250 frameborder="0" seamless></iframe>
     </div>
 
+    <div id="div30" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+        <iframe id="drag6" src="https://www.youtube.com/embed/UO5CX_oNfXg" width="250" height="200" frameborder="0" draggable="true"></iframe>
+    </div>
+
+    <div id="div31" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+        <iframe id="drag7" src='http://cdn.instantcal.com/cvir.html?id=cv_nav1&theme=RE&ntype=cv_datepicker&file=http%3A%2F%2Fwww.instantcal.com%2Ftest.ics&border_radius=5' ondragstart="drag(event)" allowTransparency='true' scrolling='no' frameborder=0 height=200 width=200></iframe>
+    </div>
+
     <img id="drag1" src="https://source.unsplash.com/random/150x150" draggable="true" ondragstart="drag(event)" width="150" height="150">
     <img id="drag5" src="https://picsum.photos/200/300/?random" draggable="true" ondragstart="drag(event)" width="300" height="300">
-    <iframe id="drag2" draggable="true" src='http://cdn.instantcal.com/cvir.html?id=cv_nav1&theme=RE&ntype=cv_datepicker&file=http%3A%2F%2Fwww.instantcal.com%2Ftest.ics&border_radius=5' draggable="true" ondragstart="drag(event)" allowTransparency='true' scrolling='no' frameborder=0 height=200 width=200></iframe>
-
     
+
+
     <p id="drag4" draggable="true" ondragstart="drag(event)">TEST TEST TEST</p>
-    <iframe src="https://www.youtube.com/embed/UO5CX_oNfXg" width="560" height="315" frameborder="0" draggable="true"></iframe>
+   
 
 </body>
 </html>
