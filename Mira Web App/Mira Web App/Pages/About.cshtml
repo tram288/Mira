@@ -43,7 +43,29 @@
             top: 5px;
         }
 
-        #iframecontainer{
+        #clockcontainer {
+            position: relative;
+            height: 150px;
+            width: 300px;
+            cursor: pointer;
+            border: 1px solid white;
+            float: left;
+            top: 5px;
+            z-index: 3;
+        }
+
+        #youtubecontainer {
+            position: relative;
+            height: 150px;
+            width: 300px;
+            cursor: pointer;
+            border: 1px solid white;
+            float: left;
+            top: 5px;
+            z-index: 3;
+        }
+
+        #calendarcontainer {
             position: relative;
             height: 150px;
             width: 300px;
@@ -58,6 +80,16 @@
             z-index: -1;
             position: relative;
             left: 40px;
+        }
+
+        #youtube{
+            position: relative;
+            left: 30px;
+        }
+
+        #calendar {
+            position: relative;
+            left: 100px;
         }
 
         p {
@@ -86,17 +118,17 @@
                 <li> <img id="drag1" src="https://source.unsplash.com/random/150x150" draggable="true" ondragstart="drag(event)" width="150" height="150"></li>
                 <li> <img id="drag5" src="https://picsum.photos/200/300/?random" draggable="true" ondragstart="drag(event)" width="150" height="150"></li>
                 <li>
-                    <div id="iframecontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                    <div id="clockcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
                         <iframe id="clock" src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=America%2FNew_York" scrolling='no' height=200 width=250 frameborder="0" seamless></iframe>
                     </div>
                 </li>
                 <li>
-                    <div id="iframecontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                    <div id="youtubecontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
                         <iframe id="youtube" src="https://www.youtube.com/embed/UO5CX_oNfXg" width="250" height="200" frameborder="0" draggable="true"></iframe>
                     </div>
                 </li>
                 <li>
-                    <div id="iframecontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                    <div id="calendarcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
                         <iframe id="calendar" src='http://cdn.instantcal.com/cvir.html?id=cv_nav1&theme=RE&ntype=cv_datepicker&file=http%3A%2F%2Fwww.instantcal.com%2Ftest.ics&border_radius=5' ondragstart="drag(event)" allowTransparency='true' scrolling='no' frameborder=0 height=200 width=200></iframe>
                     </div>
                 </li>
