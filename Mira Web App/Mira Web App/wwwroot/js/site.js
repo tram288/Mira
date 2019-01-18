@@ -1,5 +1,4 @@
-﻿// Write your Javascript code.
-
+﻿
 function allowDrop(ev) {
     ev.preventDefault();
 }
