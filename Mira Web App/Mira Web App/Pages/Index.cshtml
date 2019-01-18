@@ -4,105 +4,174 @@
     ViewData["Title"] = "Home page";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Bring in libraries from NuGet and npm, and automate tasks using Grunt or Gulp.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <style>
+        body {
+            background: black;
+        }
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core Razor Pages</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
+        #navigationbar a {
+            position: absolute;
+            left: -225px;
+            transition: 0.5s;
+            padding: 15px;
+            width: 230px;
+            color: white;
+            border-radius: 0 5px 5px 0;
+        }
+
+        #widget {
+            top: 55px;
+            background-color: white;
+        }
+
+        #navigationbar a:hover {
+            left: 0;
+        }
+
+
+        #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19, #div20, #div21, #div22, #div23, #div23,
+        #div24, #div25, #div26, #div27, #div28, #div29, #div30, #div31, #div32, #div33, #div34, #div35 {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border: 1px solid white;
+            float: left;
+            top: 5px;
+        }
+
+        #clockcontainer {
+            position: relative;
+            height: 150px;
+            width: 300px;
+            cursor: pointer;
+            border: 1px solid white;
+            float: left;
+            top: 5px;
+            z-index: 3;
+        }
+
+        #youtubecontainer {
+            position: relative;
+            height: 150px;
+            width: 300px;
+            cursor: pointer;
+            border: 1px solid white;
+            float: left;
+            top: 5px;
+            z-index: 3;
+        }
+
+        #calendarcontainer {
+            position: relative;
+            height: 150px;
+            width: 300px;
+            cursor: pointer;
+            border: 1px solid white;
+            float: left;
+            top: 5px;
+            z-index: 3;
+        }
+
+        #clock {
+            z-index: -1;
+            position: relative;
+            left: 40px;
+        }
+
+        #youtube {
+            position: relative;
+            left: 30px;
+        }
+
+        #calendar {
+            position: relative;
+            left: 100px;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        input {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navigationbar">
+        <a id="widget">
+
+            <ul>
+                <li><input type="button" value="Reset" onClick="location.href=location.href"></li>
+                <li> <img id="drag1" src="https://source.unsplash.com/random/150x150" draggable="true" ondragstart="drag(event)" width="150" height="150"></li>
+                <li> <img id="drag5" src="https://picsum.photos/200/300/?random" draggable="true" ondragstart="drag(event)" width="150" height="150"></li>
+                <li>
+                    <div id="clockcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                        <iframe id="clock" src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=America%2FNew_York" scrolling='no' height=200 width=250 frameborder="0" seamless></iframe>
+                    </div>
+                </li>
+                <li>
+                    <div id="youtubecontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                        <iframe id="youtube" src="https://www.youtube.com/embed/UO5CX_oNfXg" width="250" height="200" frameborder="0" draggable="true"></iframe>
+                    </div>
+                </li>
+                <li>
+                    <div id="calendarcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                        <iframe id="calendar" src='http://cdn.instantcal.com/cvir.html?id=cv_nav1&theme=RE&ntype=cv_datepicker&file=http%3A%2F%2Fwww.instantcal.com%2Ftest.ics&border_radius=5' ondragstart="drag(event)" allowTransparency='true' scrolling='no' frameborder=0 height=200 width=200></iframe>
+                    </div>
+                </li>
+            </ul>
+        </a>
+
     </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?linkid=852130">Working with Razor Pages.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure App Service</a></li>
-        </ul>
-    </div>
-</div>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div17" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div19" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div20" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div21" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div22" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div23" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div24" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div25" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div26" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div27" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div28" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div29" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div30" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div31" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div32" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div33" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div34" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div35" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</body>
+</html>
